@@ -1,3 +1,4 @@
 textdetectorapp/update_results/
 venv
 **/__pycache__/*
+dist/
