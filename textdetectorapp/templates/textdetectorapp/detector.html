@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Detector</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'textdetectorapp/styles.css' %}">
         <style>
             #text {
                 width: 500px;
@@ -12,15 +14,22 @@
         </style>
     </head>
     <body>
-        <textarea id="text"></textarea>
-        <select id="method">
-            <option value="OpenAI-D">OpenAI Detector</option>
-            <option value="ChatGPT-D">ChatGPT Detector</option>
-            <option value="LM-D">LM Detector</option>
-        </select>
-        <button id="api"></button>
-        <div id="result"></div>
-        <div id="message"></div>
+        <h1 id="title">AI Generated Text Detector</h1>
+        <div id="input-area">
+            <textarea id="text"></textarea>
+            <div id="input-options">
+                <select id="method">
+                    <option value="OpenAI-D">OpenAI Detector</option>
+                    <option value="ChatGPT-D">ChatGPT Detector</option>
+                    <option value="LM-D">LM Detector</option>
+                </select>
+                <button id="api">Get results</button>  
+            </div>
+        </div>
+        <div id="result-area">
+            <div id="result">Result</div>
+            <div id="message"></div>
+        </div>
         <script>
             let body = document.getElementsByTagName('body')[0]
             let text = document.getElementById('text')

@@ -1,0 +1,79 @@
+body {
+    height: 100vh;
+    background-color: #1fc8db;
+    background-image: linear-gradient(140deg, #EADEDB 0%, #70bc83 50%, #BFD641 75%);
+    opacity: 0.95;
+}
+
+#title {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+#input-area {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#text {
+    display: block;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border-color: aquamarine;
+}
+
+#text:focus {
+    box-shadow: gray;
+}
+
+#method {
+    font-size: large;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: rgb(201, 199, 199) solid 0.5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#method:hover, #method:active {
+    background-color: rgb(144, 179, 243);
+}
+
+#api {
+    font-size: large;
+    background-color: rgb(168, 158, 10);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: rgb(201, 199, 199) solid 0.5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#api:hover,#api:active{
+    background-color: rgb(209, 196, 13);
+
+}
+
+#result-area {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+}
